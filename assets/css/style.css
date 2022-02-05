@@ -766,7 +766,10 @@ header .header .navbar nav ul li a:hover {
     border-width: 1px;
     margin-bottom: 30px;
     transition: border-color .15s;
-    height: 150px;
+    height: 10rem;
+    resize: vertical;
+    max-height: 20rem;
+    min-height: 10rem;
 }
 
 .contact .message-section .message-box form .nameemailphone input::placeholder,
@@ -990,4 +993,30 @@ footer {
 
 .footer-bottom ul li a:hover {
     color: #fff;
+}
+
+
+/* Page Top Button */
+.page-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #6168FF;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 6%);
+    font-size: 19px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    transition: 0.2s;
+    width: 45px;
+    z-index: 2;
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-top-btn:hover {
+    background: #211E3B;
 }
